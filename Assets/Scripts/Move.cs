@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.VFX;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Move : MonoBehaviour
 {

@@ -8,6 +8,6 @@ public class ScoreFruit : Fruit
     }
     public override void OnSliced(Player player, int hitCount)
     {
-
+        throw new System.NotImplementedException();
     }
 }
