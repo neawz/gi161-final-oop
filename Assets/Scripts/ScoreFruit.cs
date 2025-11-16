@@ -4,7 +4,7 @@ public class ScoreFruit : Fruit
 {
     public override void OnSliced(Player player)
     {
-        throw new System.NotImplementedException();
+        player.AddScore(this.Score);
     }
     public override void OnSliced(Player player, int hitCount)
     {
