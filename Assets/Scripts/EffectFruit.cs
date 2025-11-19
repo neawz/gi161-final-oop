@@ -6,12 +6,12 @@ public class EffectFruit : Fruit
     {
         Time = 10f;
     }
-    public override void OnSliced(Player player)
+    public override void OnSlice(Player player)
     {
         player.AddTime(this.Time);
     }
 
-    public override void OnSliced(Player player, int hitCount)
+    public override void OnSlice(Player player, int hitCount)
     {
         throw new System.NotImplementedException();
     }

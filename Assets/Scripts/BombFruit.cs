@@ -7,12 +7,12 @@ public class BombFruit : Fruit
         Score = -10;
         Time = -10f;
     }
-    public override void OnSliced(Player player)
+    public override void OnSlice(Player player)
     {
         player.AddScore(this.Score);
     }
 
-    public override void OnSliced(Player player, int hitCount)
+    public override void OnSlice(Player player, int hitCount)
     {
         throw new System.NotImplementedException();
     }

@@ -8,6 +8,6 @@ public abstract class Fruit : MonoBehaviour
     private float time;
     public float Time { get => time; set => time = value; }
 
-    public abstract void OnSliced(Player player);
-    public abstract void OnSliced(Player player, int hitCount);
+    public abstract void OnSlice(Player player);
+    public abstract void OnSlice(Player player, int hitCount);
 }
