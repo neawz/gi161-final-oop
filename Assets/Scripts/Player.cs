@@ -7,15 +7,16 @@ public class Player : MonoBehaviour
     {
         get => totalScore; set => totalScore = value;
     }
-    private float timed;
-    public float Timed
+
+    private float playTime;
+    public float PlayTime
     {
-        get => timed; set => timed = value;
+        get => playTime; set => playTime = value;
     }
 
-    [SerializeField] private float comboWindow = 0.5f;
-    [SerializeField] private int comboHits;
-    [SerializeField] private float lastSliceTime;
+    [field: SerializeField] private float comboWindow = 0.5f;
+    [field: SerializeField] private int comboHits;
+    [field: SerializeField] private float lastSliceTime;
 
     public void AddScore(int amount)
     {
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
     }
     public void AddTime(float amount)
     {
-        Timed += Mathf.Clamp(amount, 0, Timed + amount);
+        PlayTime += Mathf.Clamp(amount, 0, PlayTime + amount);
     }
     public void Slice()
     {
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
     }
     public void ApplySlice(Fruit fruit, int hitCountForThisStrike)
     {
+        Debug.Log("ApplySlice");
         Slice();
         fruit.OnSlice(this, hitCountForThisStrike);
     }

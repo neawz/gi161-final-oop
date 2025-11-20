@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class FruitSpawner : MonoBehaviour
 {
-    [SerializeField] private Fruit[] fruitPrefabs;
-    [SerializeField] private Transform[] spawnPoints;
-    [SerializeField] private float launchForce = 8f;
-    [SerializeField] private float randomAngle = 30f;
-    [SerializeField] private float spawnInterval = 0.8f;
+    [field: SerializeField] private Fruit[] fruitPrefabs;
+    [field: SerializeField] private Transform[] spawnPoints;
+    [field: SerializeField] private float launchForce = 8f;
+    [field: SerializeField] private float randomAngle = 30f;
+    [field: SerializeField] private float spawnInterval = 0.8f;
 
     private float nextTime;
 

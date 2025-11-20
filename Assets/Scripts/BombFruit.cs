@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class BombFruit : Fruit
 {
-    public void InitBomb()
+    [field: SerializeField] private int penaltyScore = 5;
+    [field: SerializeField] private float penaltyTime = 2f;
+
+    public override int GetScore()
     {
-        Score = -10;
-        Time = -10f;
-    }
-    public override void OnSlice(Player player)
-    {
-        player.AddScore(this.Score);
+        return 0;
     }
 
     public override void OnSlice(Player player, int hitCount)
     {
-        throw new System.NotImplementedException();
+        if (Sliced) return;
+        Sliced = true;
+        //Penalty
+        player.AddScore(-penaltyScore);
+        player.AddTime(-penaltyTime);
+
+        OnSlicedVisual();
+        FruitDestroy();
     }
 }

@@ -4,11 +4,11 @@ public class EffectFruit : Fruit
 {
     public void InitEffect()
     {
-        Time = 10f;
+        PlayTime = 10f;
     }
     public override void OnSlice(Player player)
     {
-        player.AddTime(this.Time);
+        player.AddTime(this.PlayTime);
     }
 
     public override void OnSlice(Player player, int hitCount)
