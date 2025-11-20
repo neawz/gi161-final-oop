@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class EffectFruit : Fruit
 {
+    public override int GetScore()
+    {
+        return Score;
+    }
+
     public void InitEffect()
     {
         PlayTime = 10f;

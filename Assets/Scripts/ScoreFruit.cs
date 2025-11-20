@@ -3,6 +3,12 @@ using UnityEngine;
 public class ScoreFruit : Fruit
 {
     [field: SerializeField] private int bonusPerHit;
+
+    public override int GetScore()
+    {
+        return Score;
+    }
+
     public override void OnSlice(Player player, int hitCount)
     {
         if (Sliced)

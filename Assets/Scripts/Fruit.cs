@@ -9,11 +9,12 @@ public abstract class Fruit : MonoBehaviour
     public float PlayTime { get => playTime; set => playTime = value; }
 
     private bool sliced;
-    protected bool Sliced { get => sliced; set => sliced = value; } 
-    public virtual int GetScore()
+    protected bool Sliced { get => sliced; set => sliced = value; }
+    private void FixedUpdate()
     {
-        return Score;
+        Destroy(this.gameObject, 3f);
     }
+    public abstract int GetScore();
     public virtual void OnSlice(Player player)
     {
         if (Sliced)
@@ -49,9 +50,5 @@ public abstract class Fruit : MonoBehaviour
     protected virtual void FruitDestroy()
     {
         Destroy(this.gameObject);
-    }
-    private void FixedUpdate()
-    {
-        Destroy(this.gameObject, 3f);
     }
 }
