@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class ScoreFruit : Fruit
 {
-    public override void OnSlice(Player player)
-    {
-        player.AddScore(this.Score);
-    }
+    [field:SerializeField] private int bonusPerHit ;
     public override void OnSlice(Player player, int hitCount)
     {
-        throw new System.NotImplementedException();
+        if(Sliced)
+        {
+            return;
+        }
+        Sliced = true;
+
+        int totalGetScore = GetSocre() + bonusPerHit * Mathf.Max(0, hitCount - 1);
+        player.AddScore(totalGetScore);
+        player.AddTime(Time);
+        OnSlicedVisual();
+        FruitDestroy();
     }
 }
