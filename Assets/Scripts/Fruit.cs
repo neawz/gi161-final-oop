@@ -3,10 +3,10 @@ using UnityEngine;
 public abstract class Fruit : MonoBehaviour
 {
     private int score;
-    public int Score { get => score; set => score = value; }
+    public int Score { get => score; set => score = (value < 0) ? 0 : value; }
 
     private float playTime;
-    public float PlayTime { get => playTime; set => playTime = value; }
+    public float PlayTime { get => playTime; set => playTime = (value < 0) ? 0 : value; }
 
     private bool sliced;
     protected bool Sliced { get => sliced; set => sliced = value; }
@@ -17,28 +17,9 @@ public abstract class Fruit : MonoBehaviour
     public abstract int GetScore();
     public virtual void OnSlice(Player player)
     {
-        if (Sliced)
-        {
-            return;
-        }
-        sliced = true;
-        player.AddScore(GetScore());
-        player.AddTime(PlayTime);
-        OnSlicedVisual();
-        FruitDestroy();
-    }
-
-    public virtual void OnSlice(Player player, int hitCount)
-    {
-        if (Sliced)
-        {
-            return;
-        }
+        if (Sliced) return;
         Sliced = true;
-        int normalScore = GetScore();
-        float comboMutiplier = 1f + Mathf.Max(0, hitCount - 1) * 0.1f;
-
-        player.AddScore(Mathf.RoundToInt(normalScore * comboMutiplier));
+        player.AddScore(GetScore());
         player.AddTime(PlayTime);
         OnSlicedVisual();
         FruitDestroy();

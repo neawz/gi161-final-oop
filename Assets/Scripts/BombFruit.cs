@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BombFruit : Fruit
 {
-    [field: SerializeField] private int penaltyScore = 5;
+    [field: SerializeField] private int penaltyScore = 20;
     [field: SerializeField] private float penaltyTime = 2f;
 
     public override int GetScore()
@@ -10,7 +10,7 @@ public class BombFruit : Fruit
         return 0;
     }
 
-    public override void OnSlice(Player player, int hitCount)
+    public override void OnSlice(Player player)
     {
         if (Sliced) return;
         Sliced = true;

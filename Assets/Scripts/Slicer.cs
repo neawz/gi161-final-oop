@@ -77,28 +77,20 @@ public class Slicer : MonoBehaviour
 
             if (speed < minSliceSpeed) continue;
 
-            // Sweep circle cast along segment
             RaycastHit2D[] hits = Physics2D.CircleCastAll(a, sliceRadius, (b - a).normalized, dist);
             foreach (var h in hits)
             {
                 var fruit = h.collider.GetComponentInParent<Fruit>();
-                if (fruit == null) continue;
-
-                if (hitThisFrame.Add(fruit))
+                if (fruit != null && hitThisFrame.Add(fruit))
                 {
-                    hitCountThisStrike++;
+                    player.Slice(fruit);
                 }
             }
         }
 
         if (hitCountThisStrike > 0)
         {
-            // แจ้งผลไม้ทีละลูกเพื่อให้ผลลัพธ์ถูกต้อง
-            foreach (var fruit in hitThisFrame)
-            {
-                player.ApplySlice(fruit, hitCountThisStrike);
-            }
-            points.Clear(); // เริ่มเส้นใหม่สำหรับฟาดครั้งถัดไป
+            points.Clear();
             lr.positionCount = 0;
         }
     }

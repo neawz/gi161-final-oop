@@ -52,6 +52,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb1
       objectReference: {fileID: 0}
+    - target: {fileID: 3729067294865939792, guid: 00f8149cf8c023e44b9b7b000c2d5b65, type: 3}
+      propertyPath: m_Name
+      value: Bomb1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980498729192660353, guid: 00f8149cf8c023e44b9b7b000c2d5b65, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980498729192660353, guid: 00f8149cf8c023e44b9b7b000c2d5b65, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980498729192660353, guid: 00f8149cf8c023e44b9b7b000c2d5b65, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9095010131203599876, guid: 00f8149cf8c023e44b9b7b000c2d5b65, type: 3}
       propertyPath: m_Color.b
       value: 0
