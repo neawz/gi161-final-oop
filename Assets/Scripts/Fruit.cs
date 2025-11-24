@@ -12,7 +12,7 @@ public abstract class Fruit : MonoBehaviour
     protected bool Sliced { get => sliced; set => sliced = value; }
     private void FixedUpdate()
     {
-        Destroy(this.gameObject, 3f);
+        Destroy(this.gameObject, 5f);
     }
     public abstract int GetScore();
     public virtual void OnSlice(Player player)
