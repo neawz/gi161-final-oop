@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     {
         get => totalScore; set => totalScore = value;
     }
-
     private float playTime;
     public float PlayTime
     {
@@ -18,6 +17,17 @@ public class Player : MonoBehaviour
     {
         TotalScore = Mathf.Max(0, TotalScore + amount);
     }
+    public void AddScore(int amount, bool isCritical)
+    {
+        if (isCritical)
+        {
+            totalScore = Mathf.Max(0, totalScore + amount * 2);
+        }
+        else
+        {
+            AddScore(amount);
+        }
+    }
     public void AddTime(float amount)
     {
         PlayTime = Mathf.Max(0f, PlayTime + amount);
@@ -25,5 +35,9 @@ public class Player : MonoBehaviour
     public void Slice(Fruit fruit)
     {
         fruit.OnSlice(this);
+    }
+    public void Slice(Fruit fruit, Vector2 hitDirection)
+    {
+        fruit.OnSlice(this, hitDirection);
     }
 }

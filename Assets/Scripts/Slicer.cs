@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class Slicer : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private float minSliceSpeed = 100f;    // px/sec (screen space)
-    [SerializeField] private float sliceRadius = 0.2f;      // world units
+    [SerializeField] private float minSliceSpeed = 100f;
+    [SerializeField] private float sliceRadius = 0.2f;
     [SerializeField] private float maxTrailTime = 0.15f;
 
     private LineRenderer lr;
@@ -31,7 +31,7 @@ public class Slicer : MonoBehaviour
 
     private void HandleInput()
     {
-        bool pressing = Input.GetMouseButton(0); // รองรับ touch ผ่าน mouse ใน editor
+        bool pressing = Input.GetMouseButton(0);
         if (!pressing) return;
 
         Vector3 screenPos = Input.mousePosition;
@@ -44,9 +44,7 @@ public class Slicer : MonoBehaviour
 
     private void CullOldPoints()
     {
-        // ตัดจุดที่เก่ากว่า window
         float cutoff = Time.time - maxTrailTime;
-        // เก็บง่ายๆ: หากไม่มี input ล่าสุด ให้ล้าง
         if (Time.time - lastInputTime > maxTrailTime)
         {
             points.Clear();
@@ -76,18 +74,26 @@ public class Slicer : MonoBehaviour
             float speed = dist / Time.deltaTime;
 
             if (speed < minSliceSpeed) continue;
+            Vector2 hitDir = (b - a).normalized;
+            bool isDirectionalCritical = hitDir.y < -0.5f;
 
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(a, sliceRadius, (b - a).normalized, dist);
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(a, sliceRadius, hitDir, dist);
             foreach (var h in hits)
             {
                 var fruit = h.collider.GetComponentInParent<Fruit>();
                 if (fruit != null && hitThisFrame.Add(fruit))
                 {
-                    player.Slice(fruit);
+                    if (isDirectionalCritical)
+                    {
+                        player.Slice(fruit, hitDir);
+                    }
+                    else
+                    {
+                        player.Slice(fruit);
+                    }
                 }
             }
         }
-
         if (hitCountThisStrike > 0)
         {
             points.Clear();

@@ -1,33 +1,42 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class Fruit : MonoBehaviour
 {
-    private int score;
+    private int score = 1;
     public int Score { get => score; set => score = (value < 0) ? 0 : value; }
 
     private float playTime;
     public float PlayTime { get => playTime; set => playTime = (value < 0) ? 0 : value; }
+    protected bool sliced;
 
-    private bool sliced;
-    protected bool Sliced { get => sliced; set => sliced = value; }
     private void FixedUpdate()
     {
         Destroy(this.gameObject, 5f);
     }
-    public abstract int GetScore();
+    public virtual int GetScore()
+    {
+        return Score;
+    }
     public virtual void OnSlice(Player player)
     {
-        if (Sliced) return;
-        Sliced = true;
+        if (sliced) return;
+        sliced = true;
         player.AddScore(GetScore());
         player.AddTime(PlayTime);
         OnSlicedVisual();
         FruitDestroy();
     }
-    protected virtual void OnSlicedVisual()
+    public virtual void OnSlice(Player player, Vector2 hitDirection)
     {
-        // Play sound, play animation or add effect.bla bla bla 
+        if (sliced) return;
+        sliced = true;
+        bool isCritical = hitDirection.y < -0.5f;
+        player.AddScore(GetScore(), isCritical);
+        player.AddTime(PlayTime);
+        OnSlicedVisual();
+        FruitDestroy();
     }
+    protected abstract void OnSlicedVisual();
     protected virtual void FruitDestroy()
     {
         Destroy(this.gameObject);
