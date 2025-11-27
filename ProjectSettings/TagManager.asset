@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -41,3 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backdrop
+    uniqueID: 1556115245
+    locked: 0
+  - name: Fruit
+    uniqueID: 543923937
+    locked: 0
+  - name: Slicer
+    uniqueID: 2228109303
+    locked: 0
+  - name: Particle
+    uniqueID: 3823345811
+    locked: 0
+  m_RenderingLayers:
+  - Default

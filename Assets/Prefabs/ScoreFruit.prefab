@@ -77,4 +77,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35796a9031721d7479225632fe8383ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusPerHit: 0
+  scoreParticles: {fileID: 2328957777877912640, guid: 343bff4359598ec4c9eed5c4de440363, type: 3}
+  sliceSound: {fileID: 0}

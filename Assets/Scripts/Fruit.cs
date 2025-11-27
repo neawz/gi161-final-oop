@@ -2,7 +2,7 @@
 
 public abstract class Fruit : MonoBehaviour
 {
-    private int score = 1;
+    private int score = 3;
     public int Score { get => score; set => score = (value < 0) ? 0 : value; }
 
     private float playTime;
