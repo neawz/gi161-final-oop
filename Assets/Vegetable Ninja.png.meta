@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: d6bd4baf1aae6524c81f28201793ea92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4725862951249594948
+    second: Vegetable Ninja_0
+  - first:
+      213: -1324499766575201455
+    second: Vegetable Ninja_1
+  - first:
+      213: 7819721730573042109
+    second: Vegetable Ninja_2
+  - first:
+      213: 3333969950303229023
+    second: Vegetable Ninja_3
+  - first:
+      213: -5393868742917458631
+    second: Vegetable Ninja_4
+  - first:
+      213: -4231748430562323454
+    second: Vegetable Ninja_5
+  - first:
+      213: 5398398381954622522
+    second: Vegetable Ninja_6
+  - first:
+      213: 333229623562287290
+    second: Vegetable Ninja_7
+  - first:
+      213: 7628702016772158028
+    second: Vegetable Ninja_8
+  - first:
+      213: 7445194041579720504
+    second: Vegetable Ninja_9
+  - first:
+      213: -5712345981172310867
+    second: Vegetable Ninja_10
+  - first:
+      213: 7861493571667971451
+    second: Vegetable Ninja_11
+  - first:
+      213: -7590999659521084332
+    second: Vegetable Ninja_12
+  - first:
+      213: 5970937383961461994
+    second: Vegetable Ninja_13
+  - first:
+      213: -4269910215484976900
+    second: Vegetable Ninja_14
+  - first:
+      213: 1763800808159854927
+    second: Vegetable Ninja_15
+  - first:
+      213: -5660744250420494812
+    second: Vegetable Ninja_16
+  - first:
+      213: 1563258516635291397
+    second: Vegetable Ninja_17
+  - first:
+      213: 13980683631835350
+    second: Vegetable Ninja_18
+  - first:
+      213: 8437198410781773157
+    second: Vegetable Ninja_19
+  - first:
+      213: 6531546659166917879
+    second: Vegetable Ninja_20
+  - first:
+      213: -4138284159124374248
+    second: Vegetable Ninja_21
+  - first:
+      213: -3293237162188285627
+    second: Vegetable Ninja_22
+  - first:
+      213: 2547904400244642821
+    second: Vegetable Ninja_23
+  - first:
+      213: -4031758437217586332
+    second: Vegetable Ninja_24
+  - first:
+      213: -5494021556539060006
+    second: Vegetable Ninja_25
+  - first:
+      213: -4879238606381870827
+    second: Vegetable Ninja_26
+  - first:
+      213: 5933603864347387165
+    second: Vegetable Ninja_27
+  - first:
+      213: 1033510338552011783
+    second: Vegetable Ninja_28
+  - first:
+      213: -4913820627143840302
+    second: Vegetable Ninja_29
+  - first:
+      213: 4820425968785712165
+    second: Vegetable Ninja_30
+  - first:
+      213: 6725002669945520450
+    second: Vegetable Ninja_31
+  - first:
+      213: -4645279648051311465
+    second: Vegetable Ninja_32
+  - first:
+      213: 3871881632883846344
+    second: Vegetable Ninja_33
+  - first:
+      213: 8721829452814130268
+    second: Vegetable Ninja_34
+  - first:
+      213: 3043811677281569876
+    second: Vegetable Ninja_35
+  - first:
+      213: -9109860813424840795
+    second: Vegetable Ninja_36
+  - first:
+      213: 3247522448426446703
+    second: Vegetable Ninja_37
+  - first:
+      213: -8995099900000407128
+    second: Vegetable Ninja_38
+  - first:
+      213: -6686670049945810081
+    second: Vegetable Ninja_39
+  - first:
+      213: -2489804162705066651
+    second: Vegetable Ninja_40
+  - first:
+      213: 5402904112217245849
+    second: Vegetable Ninja_41
+  - first:
+      213: -4432053854539938216
+    second: Vegetable Ninja_42
+  - first:
+      213: 813799573791871381
+    second: Vegetable Ninja_43
+  - first:
+      213: -6392207728315515347
+    second: Vegetable Ninja_44
+  - first:
+      213: 330788043991887064
+    second: Vegetable Ninja_45
+  - first:
+      213: -3705852533488610461
+    second: Vegetable Ninja_46
+  - first:
+      213: -5046024821090976011
+    second: Vegetable Ninja_47
+  - first:
+      213: -4058916262324851121
+    second: Vegetable Ninja_48
+  - first:
+      213: 3384908046380802507
+    second: Vegetable Ninja_49
+  - first:
+      213: -6288658025717612503
+    second: Vegetable Ninja_50
+  - first:
+      213: 6195903332181407432
+    second: Vegetable Ninja_51
+  - first:
+      213: 623084437624230783
+    second: Vegetable Ninja_52
+  - first:
+      213: 5661439204902683359
+    second: Vegetable Ninja_53
+  - first:
+      213: -8800313076290601567
+    second: Vegetable Ninja_54
+  - first:
+      213: -5291490080516065214
+    second: Vegetable Ninja_55
+  - first:
+      213: 7851113949297254825
+    second: Vegetable Ninja_56
+  - first:
+      213: 7456378410115001873
+    second: Vegetable Ninja_57
+  - first:
+      213: -3307124883870043896
+    second: Vegetable Ninja_58
+  - first:
+      213: -729345626172413532
+    second: Vegetable Ninja_59
+  - first:
+      213: -215852569696635934
+    second: Vegetable Ninja_60
+  - first:
+      213: -8784507814876756391
+    second: Vegetable Ninja_61
+  - first:
+      213: 941014988703786444
+    second: Vegetable Ninja_62
+  - first:
+      213: -2524855732500873701
+    second: Vegetable Ninja_63
+  - first:
+      213: 2928062987606797179
+    second: Vegetable Ninja_64
+  - first:
+      213: 5645238471506176835
+    second: Vegetable Ninja_65
+  - first:
+      213: 3040574817807391563
+    second: Vegetable Ninja_66
+  - first:
+      213: -6676177595492965717
+    second: Vegetable Ninja_67
+  - first:
+      213: -268585747322461979
+    second: Vegetable Ninja_68
+  - first:
+      213: 5297526173145668188
+    second: Vegetable Ninja_69
+  - first:
+      213: 2576191169267563324
+    second: Vegetable Ninja_70
+  - first:
+      213: 4516793429461669565
+    second: Vegetable Ninja_71
+  - first:
+      213: 7056588388516131917
+    second: Vegetable Ninja_72
+  - first:
+      213: -1486200082971810563
+    second: Vegetable Ninja_73
+  - first:
+      213: 2052217694554104016
+    second: Vegetable Ninja_74
+  - first:
+      213: 5360024420208500681
+    second: Vegetable Ninja_75
+  - first:
+      213: -4647211853054577222
+    second: Vegetable Ninja_76
+  - first:
+      213: -4343622306890049158
+    second: Vegetable Ninja_77
+  - first:
+      213: -5146357703551602868
+    second: Vegetable Ninja_78
+  - first:
+      213: 4243921755702109545
+    second: Vegetable Ninja_79
+  - first:
+      213: -6545531545406848665
+    second: Vegetable Ninja_80
+  - first:
+      213: 1583773407725826792
+    second: Vegetable Ninja_81
+  - first:
+      213: 8175058523153536172
+    second: Vegetable Ninja_82
+  - first:
+      213: 2672777992080458112
+    second: Vegetable Ninja_83
+  - first:
+      213: -7307119288808196376
+    second: Vegetable Ninja_84
+  - first:
+      213: -2910405384929952978
+    second: Vegetable Ninja_85
+  - first:
+      213: 2576174744481504403
+    second: Vegetable Ninja_86
+  - first:
+      213: 6141578451341737866
+    second: Vegetable Ninja_87
+  - first:
+      213: 2346884351649813809
+    second: Vegetable Ninja_88
+  - first:
+      213: -7865868075140651718
+    second: Vegetable Ninja_89
+  - first:
+      213: 9197604257143546522
+    second: Vegetable Ninja_90
+  - first:
+      213: 1300105459813164822
+    second: Vegetable Ninja_91
+  - first:
+      213: -6681826366127701990
+    second: Vegetable Ninja_92
+  - first:
+      213: -6180956847532883894
+    second: Vegetable Ninja_93
+  - first:
+      213: -1113104810027380787
+    second: Vegetable Ninja_94
+  - first:
+      213: -7016390927702396353
+    second: Vegetable Ninja_95
+  - first:
+      213: 5071918769666330930
+    second: Vegetable Ninja_96
+  - first:
+      213: -7834247911208220398
+    second: Vegetable Ninja_97
+  - first:
+      213: -4689636605962234330
+    second: Vegetable Ninja_98
+  - first:
+      213: 2607324849575574430
+    second: Vegetable Ninja_99
+  - first:
+      213: -1574530427570012133
+    second: Vegetable Ninja_100
+  - first:
+      213: 3601118799239075881
+    second: Vegetable Ninja_101
+  - first:
+      213: 1385808885855734270
+    second: Vegetable Ninja_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vegetable Ninja_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5b69d3fac5a6eb0800000000000000
+      internalID: -4725862951249594948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d0c32808eaa85247a7f71aaecc3028b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vegetable Ninja_0: -4725862951249594948
+      Vegetable Ninja_1: -1324499766575201455
+      Vegetable Ninja_10: -5712345981172310867
+      Vegetable Ninja_100: -1574530427570012133
+      Vegetable Ninja_101: 3601118799239075881
+      Vegetable Ninja_102: 1385808885855734270
+      Vegetable Ninja_103: 323102347
+      Vegetable Ninja_11: 7861493571667971451
+      Vegetable Ninja_12: -7590999659521084332
+      Vegetable Ninja_13: 5970937383961461994
+      Vegetable Ninja_14: -4269910215484976900
+      Vegetable Ninja_15: 1763800808159854927
+      Vegetable Ninja_16: -5660744250420494812
+      Vegetable Ninja_17: 1563258516635291397
+      Vegetable Ninja_18: 13980683631835350
+      Vegetable Ninja_19: 8437198410781773157
+      Vegetable Ninja_2: 7819721730573042109
+      Vegetable Ninja_20: 6531546659166917879
+      Vegetable Ninja_21: -4138284159124374248
+      Vegetable Ninja_22: -3293237162188285627
+      Vegetable Ninja_23: 2547904400244642821
+      Vegetable Ninja_24: -4031758437217586332
+      Vegetable Ninja_25: -5494021556539060006
+      Vegetable Ninja_26: -4879238606381870827
+      Vegetable Ninja_27: 5933603864347387165
+      Vegetable Ninja_28: 1033510338552011783
+      Vegetable Ninja_29: -4913820627143840302
+      Vegetable Ninja_3: 3333969950303229023
+      Vegetable Ninja_30: 4820425968785712165
+      Vegetable Ninja_31: 6725002669945520450
+      Vegetable Ninja_32: -4645279648051311465
+      Vegetable Ninja_33: 3871881632883846344
+      Vegetable Ninja_34: 8721829452814130268
+      Vegetable Ninja_35: 3043811677281569876
+      Vegetable Ninja_36: -9109860813424840795
+      Vegetable Ninja_37: 3247522448426446703
+      Vegetable Ninja_38: -8995099900000407128
+      Vegetable Ninja_39: -6686670049945810081
+      Vegetable Ninja_4: -5393868742917458631
+      Vegetable Ninja_40: -2489804162705066651
+      Vegetable Ninja_41: 5402904112217245849
+      Vegetable Ninja_42: -4432053854539938216
+      Vegetable Ninja_43: 813799573791871381
+      Vegetable Ninja_44: -6392207728315515347
+      Vegetable Ninja_45: 330788043991887064
+      Vegetable Ninja_46: -3705852533488610461
+      Vegetable Ninja_47: -5046024821090976011
+      Vegetable Ninja_48: -4058916262324851121
+      Vegetable Ninja_49: 3384908046380802507
+      Vegetable Ninja_5: -4231748430562323454
+      Vegetable Ninja_50: -6288658025717612503
+      Vegetable Ninja_51: 6195903332181407432
+      Vegetable Ninja_52: 623084437624230783
+      Vegetable Ninja_53: 5661439204902683359
+      Vegetable Ninja_54: -8800313076290601567
+      Vegetable Ninja_55: -5291490080516065214
+      Vegetable Ninja_56: 7851113949297254825
+      Vegetable Ninja_57: 7456378410115001873
+      Vegetable Ninja_58: -3307124883870043896
+      Vegetable Ninja_59: -729345626172413532
+      Vegetable Ninja_6: 5398398381954622522
+      Vegetable Ninja_60: -215852569696635934
+      Vegetable Ninja_61: -8784507814876756391
+      Vegetable Ninja_62: 941014988703786444
+      Vegetable Ninja_63: -2524855732500873701
+      Vegetable Ninja_64: 2928062987606797179
+      Vegetable Ninja_65: 5645238471506176835
+      Vegetable Ninja_66: 3040574817807391563
+      Vegetable Ninja_67: -6676177595492965717
+      Vegetable Ninja_68: -268585747322461979
+      Vegetable Ninja_69: 5297526173145668188
+      Vegetable Ninja_7: 333229623562287290
+      Vegetable Ninja_70: 2576191169267563324
+      Vegetable Ninja_71: 4516793429461669565
+      Vegetable Ninja_72: 7056588388516131917
+      Vegetable Ninja_73: -1486200082971810563
+      Vegetable Ninja_74: 2052217694554104016
+      Vegetable Ninja_75: 5360024420208500681
+      Vegetable Ninja_76: -4647211853054577222
+      Vegetable Ninja_77: -4343622306890049158
+      Vegetable Ninja_78: -5146357703551602868
+      Vegetable Ninja_79: 4243921755702109545
+      Vegetable Ninja_8: 7628702016772158028
+      Vegetable Ninja_80: -6545531545406848665
+      Vegetable Ninja_81: 1583773407725826792
+      Vegetable Ninja_82: 8175058523153536172
+      Vegetable Ninja_83: 2672777992080458112
+      Vegetable Ninja_84: -7307119288808196376
+      Vegetable Ninja_85: -2910405384929952978
+      Vegetable Ninja_86: 2576174744481504403
+      Vegetable Ninja_87: 6141578451341737866
+      Vegetable Ninja_88: 2346884351649813809
+      Vegetable Ninja_89: -7865868075140651718
+      Vegetable Ninja_9: 7445194041579720504
+      Vegetable Ninja_90: 9197604257143546522
+      Vegetable Ninja_91: 1300105459813164822
+      Vegetable Ninja_92: -6681826366127701990
+      Vegetable Ninja_93: -6180956847532883894
+      Vegetable Ninja_94: -1113104810027380787
+      Vegetable Ninja_95: -7016390927702396353
+      Vegetable Ninja_96: 5071918769666330930
+      Vegetable Ninja_97: -7834247911208220398
+      Vegetable Ninja_98: -4689636605962234330
+      Vegetable Ninja_99: 2607324849575574430
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

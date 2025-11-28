@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
 {
-    [field:SerializeField] private int totalScore;
+    [field: SerializeField] private int totalScore;
+    [field: SerializeField] private TextMeshProUGUI scoreText;
     public int TotalScore
     {
         get => totalScore; set => totalScore = value;
@@ -13,9 +16,14 @@ public class Player : MonoBehaviour
         get => playTime; set => playTime = value;
     }
 
+    private void Start()
+    {
+        ResetScore();
+    }
     public void AddScore(int amount)
     {
         TotalScore = Mathf.Max(0, TotalScore + amount);
+        UpdateScoreUI();
     }
     public void AddScore(int amount, bool isCritical)
     {
@@ -27,6 +35,7 @@ public class Player : MonoBehaviour
         {
             AddScore(amount);
         }
+        UpdateScoreUI();
     }
     public void AddTime(float amount)
     {
@@ -39,5 +48,18 @@ public class Player : MonoBehaviour
     public void Slice(Fruit fruit, Vector2 hitDirection)
     {
         fruit.OnSlice(this, hitDirection);
+    }
+    public void ResetScore()
+    {
+        TotalScore = 0;
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + TotalScore;
+        }
     }
 }
