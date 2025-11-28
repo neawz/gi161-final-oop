@@ -80,4 +80,4 @@ MonoBehaviour:
   penaltyScore: 5
   penaltyTime: 2
   bombParticles: {fileID: 2328957777877912640, guid: 343bff4359598ec4c9eed5c4de440363, type: 3}
-  bombSound: {fileID: 0}
+  bombSound: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}

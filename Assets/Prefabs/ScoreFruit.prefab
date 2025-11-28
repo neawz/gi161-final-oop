@@ -78,4 +78,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreParticles: {fileID: 2328957777877912640, guid: 343bff4359598ec4c9eed5c4de440363, type: 3}
-  sliceSound: {fileID: 0}
+  sliceSound: {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}

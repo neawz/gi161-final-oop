@@ -5,12 +5,7 @@ public class ScoreFruit : Fruit
 {
     [field: SerializeField] private ParticleSystem scoreParticles;
     [field: SerializeField] private AudioClip sliceSound;
-    private static AudioSource audioSource;
 
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
     public override int GetScore()
     {
         return Score;
@@ -32,11 +27,6 @@ public class ScoreFruit : Fruit
             ps.Play();
             Destroy(ps.gameObject, ps.main.duration);
         }
-
-        // Sound
-        if (sliceSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(sliceSound);
-        }
+        AudioManager.Instance.PlaySound(sliceSound);
     }
 }
