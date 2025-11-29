@@ -1,11 +1,15 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     [field: SerializeField] private TextMeshProUGUI scoreText;
+    [field: SerializeField] private TextMeshProUGUI timeText;
     [field: SerializeField] private int totalScore;
+
+    [field: SerializeField] private float startPlayTime = 30f;
     public int TotalScore { get => totalScore; set => totalScore = value; }
 
     private float playtime;
@@ -13,8 +17,31 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        Playtime = startPlayTime;
         ResetScore();
+        UpdateTimeUI();
     }
+
+    private void Update()
+    {
+        if (Playtime > 0)
+        {
+            Playtime -= Time.deltaTime;
+            UpdateTimeUI();
+
+        }
+        else
+        {
+            Playtime = 0;
+            LoadGameOver();
+        }
+    }
+
+    private void LoadGameOver()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
+
     public void AddScore(int amount)
     {
         TotalScore = Mathf.Max(0, TotalScore + amount);
@@ -54,6 +81,13 @@ public class Player : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "Score: " + TotalScore;
+        }
+    }
+    private void UpdateTimeUI()
+    {
+        if (timeText != null)
+        {
+            timeText.text = "Time: " + Mathf.CeilToInt(Playtime);
         }
     }
 }
