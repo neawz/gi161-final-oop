@@ -6,17 +6,9 @@ public class ScoreFruit : Fruit
     [field: SerializeField] private ParticleSystem scoreParticles;
     [field: SerializeField] private AudioClip sliceSound;
 
-    public override int GetScore()
+    public void Awake()
     {
-        return Score;
-    }
-    public override void OnSlice(Player player)
-    {
-        base.OnSlice(player);
-    }
-    public override void OnSlice(Player player, Vector2 hitDirection)
-    {
-        base.OnSlice(player, hitDirection);
+        Score = 3;
     }
     protected override void OnSlicedVisual()
     {

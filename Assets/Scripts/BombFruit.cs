@@ -2,18 +2,20 @@
 
 public class BombFruit : Fruit
 {
-    [field: SerializeField] private int penaltyScore = 20;
-    [field: SerializeField] private float penaltyTime = 2f;
-
     [field: SerializeField] private ParticleSystem bombParticles;
     [field: SerializeField] private AudioClip bombSound;
 
+    public void Awake()
+    {
+        Score = 5;
+        Playtime = 2f;
+    }
     public override void OnSlice(Player player)
     {
         if (sliced) return;
         sliced = true;
-        player.AddScore(-penaltyScore);
-        player.AddTime(-penaltyTime);
+        player.AddScore(-Score);
+        player.AddTime(-Playtime);
         OnSlicedVisual();
         FruitDestroy();
     }
