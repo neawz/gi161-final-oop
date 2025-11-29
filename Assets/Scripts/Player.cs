@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class Player : MonoBehaviour
 {
@@ -34,11 +35,14 @@ public class Player : MonoBehaviour
         {
             Playtime = 0;
             LoadGameOver();
+            return;
         }
     }
 
     private void LoadGameOver()
     {
+        ScoreData.FinalScore = this.totalScore;
+
         SceneManager.LoadScene("EndGame");
     }
 

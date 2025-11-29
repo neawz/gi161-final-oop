@@ -1513,12 +1513,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitPrefabs:
-  - {fileID: 8907264499767922677, guid: cb9451769c583b94bafa52b7b2f76feb, type: 3}
-  - {fileID: 8907264499767922677, guid: cb9451769c583b94bafa52b7b2f76feb, type: 3}
-  - {fileID: 8589194573910440110, guid: ff1899f7815ad1a4794aeefa5d69b153, type: 3}
-  - {fileID: 8907264499767922677, guid: cb9451769c583b94bafa52b7b2f76feb, type: 3}
-  - {fileID: 8589194573910440110, guid: ff1899f7815ad1a4794aeefa5d69b153, type: 3}
-  - {fileID: 8589194573910440110, guid: ff1899f7815ad1a4794aeefa5d69b153, type: 3}
+  - {fileID: 8976310482131048581, guid: 7fd84ec91c63fd14b808947a00202b83, type: 3}
+  - {fileID: 8317249886102697019, guid: 477e161e467db344c87b93a9e2054083, type: 3}
+  - {fileID: 4913975199600811310, guid: 58abcf5e35f05c7468897a42358b4766, type: 3}
+  - {fileID: 4062371185324656878, guid: c04a12c34206c89458a4b06bbadfbb56, type: 3}
+  - {fileID: 4913975199600811310, guid: 58abcf5e35f05c7468897a42358b4766, type: 3}
+  - {fileID: 4913975199600811310, guid: 58abcf5e35f05c7468897a42358b4766, type: 3}
   spawnPoints:
   - {fileID: 944602923}
   - {fileID: 80617859}
