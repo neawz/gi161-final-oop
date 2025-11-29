@@ -4,17 +4,12 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
 {
-    [field: SerializeField] private int totalScore;
     [field: SerializeField] private TextMeshProUGUI scoreText;
-    public int TotalScore
-    {
-        get => totalScore; set => totalScore = value;
-    }
-    private float playTime;
-    public float PlayTime
-    {
-        get => playTime; set => playTime = value;
-    }
+    [field: SerializeField] private int totalScore;
+    public int TotalScore { get => totalScore; set => totalScore = value; }
+
+    private float playtime;
+    public float Playtime { get => playtime; set => playtime = (value < 0) ? 0 : value; }
 
     private void Start()
     {
@@ -39,7 +34,7 @@ public class Player : MonoBehaviour
     }
     public void AddTime(float amount)
     {
-        PlayTime = Mathf.Max(0f, PlayTime + amount);
+        Playtime = Mathf.Max(0f, Playtime + amount);
     }
     public void Slice(Fruit fruit)
     {
@@ -54,7 +49,6 @@ public class Player : MonoBehaviour
         TotalScore = 0;
         UpdateScoreUI();
     }
-
     private void UpdateScoreUI()
     {
         if (scoreText != null)

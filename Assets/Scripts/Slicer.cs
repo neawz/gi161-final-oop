@@ -20,7 +20,6 @@ public class Slicer : MonoBehaviour
         cam = Camera.main;
         lr.positionCount = 0;
     }
-
     private void Update()
     {
         HandleInput();
@@ -28,7 +27,6 @@ public class Slicer : MonoBehaviour
         DrawTrail();
         DetectHits();
     }
-
     private void HandleInput()
     {
         bool pressing = Input.GetMouseButton(0);
@@ -41,7 +39,6 @@ public class Slicer : MonoBehaviour
         points.Add(worldPos);
         lastInputTime = Time.time;
     }
-
     private void CullOldPoints()
     {
         float cutoff = Time.time - maxTrailTime;
@@ -51,14 +48,12 @@ public class Slicer : MonoBehaviour
             lr.positionCount = 0;
         }
     }
-
     private void DrawTrail()
     {
         lr.positionCount = points.Count;
         for (int i = 0; i < points.Count; i++)
             lr.SetPosition(i, points[i]);
     }
-
     private void DetectHits()
     {
         if (points.Count < 2) return;

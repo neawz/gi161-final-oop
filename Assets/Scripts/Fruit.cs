@@ -5,8 +5,8 @@ public abstract class Fruit : MonoBehaviour
     private int score = 3;
     public int Score { get => score; set => score = (value < 0) ? 0 : value; }
 
-    private float playTime;
-    public float PlayTime { get => playTime; set => playTime = (value < 0) ? 0 : value; }
+    private float playtime;
+    public float Playtime { get => playtime; set => playtime = (value < 0) ? 0 : value; }
     protected bool sliced;
 
     private void FixedUpdate()
@@ -22,7 +22,7 @@ public abstract class Fruit : MonoBehaviour
         if (sliced) return;
         sliced = true;
         player.AddScore(GetScore());
-        player.AddTime(PlayTime);
+        player.AddTime(Playtime);
         OnSlicedVisual();
         FruitDestroy();
     }
@@ -32,7 +32,7 @@ public abstract class Fruit : MonoBehaviour
         sliced = true;
         bool isCritical = hitDirection.y < -0.5f;
         player.AddScore(GetScore(), isCritical);
-        player.AddTime(PlayTime);
+        player.AddTime(Playtime);
         OnSlicedVisual();
         FruitDestroy();
     }
