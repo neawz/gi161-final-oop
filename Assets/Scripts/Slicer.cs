@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Slicer : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private float minSliceSpeed = 100f;
     [SerializeField] private float sliceRadius = 0.2f;
     [SerializeField] private float maxTrailTime = 0.15f;
 
@@ -58,7 +57,6 @@ public class Slicer : MonoBehaviour
     {
         if (points.Count < 2) return;
 
-        int hitCountThisStrike = 0;
         HashSet<Fruit> hitThisFrame = new();
 
         for (int i = 1; i < points.Count; i++)
@@ -68,11 +66,10 @@ public class Slicer : MonoBehaviour
             float dist = Vector2.Distance(a, b);
             float speed = dist / Time.deltaTime;
 
-            if (speed < minSliceSpeed) continue;
             Vector2 hitDir = (b - a).normalized;
             bool isDirectionalCritical = hitDir.y < -0.5f;
 
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(a, sliceRadius, hitDir, dist);
+            RaycastHit2D[] hits = Physics2D.LinecastAll(a, b);
             foreach (var h in hits)
             {
                 var fruit = h.collider.GetComponentInParent<Fruit>();
@@ -89,7 +86,7 @@ public class Slicer : MonoBehaviour
                 }
             }
         }
-        if (hitCountThisStrike > 0)
+        if (hitThisFrame.Count > 0)
         {
             points.Clear();
             lr.positionCount = 0;
