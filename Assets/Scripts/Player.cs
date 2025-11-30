@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     [field: SerializeField] private TextMeshProUGUI scoreText;
     [field: SerializeField] private TextMeshProUGUI timeText;
-    [field: SerializeField] private int totalScore;
-
     [field: SerializeField] private float startPlayTime = 30f;
+
+    [field: SerializeField] private int totalScore;
     public int TotalScore { get => totalScore; set => totalScore = value; }
 
     private float playtime;
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
     private void LoadGameOver()
     {
-        ScoreData.FinalScore = this.totalScore;
+        ScoreData.FinalScore = this.TotalScore;
 
         SceneManager.LoadScene("EndGame");
     }
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     {
         if (isCritical)
         {
-            totalScore = Mathf.Max(0, totalScore + amount * 2);
+            TotalScore = Mathf.Max(0, TotalScore + amount * 2);
         }
         else
         {

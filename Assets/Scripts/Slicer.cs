@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Slicer : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private float sliceRadius = 0.2f;
     [SerializeField] private float maxTrailTime = 0.15f;
 
     private LineRenderer lr;

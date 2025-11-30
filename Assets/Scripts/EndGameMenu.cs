@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class EndGameMenu : MonoBehaviour
 {
-    public void restartGame()
+    public void RestartGame()
     {
         SceneManager.LoadScene("PlayScene");
     }
 
-    public void mainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
