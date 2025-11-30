@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
 {
     [field: SerializeField] private TextMeshProUGUI scoreText;
     [field: SerializeField] private TextMeshProUGUI timeText;
-    [field: SerializeField] private float startPlayTime = 30f;
 
     [field: SerializeField] private int totalScore;
     public int TotalScore { get => totalScore; set => totalScore = value; }
@@ -18,7 +17,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Playtime = startPlayTime;
+        Playtime = 30;
         ResetScore();
         UpdateTimeUI();
     }
